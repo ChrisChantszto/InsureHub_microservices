@@ -59,4 +59,6 @@ This will return a blob object representing the PDF file. You can then use this 
 
 Please see the included UML sequence diagram for a detailed flow of how requesting and receiving data works in this microservice.
 
-The UML diagram shows the process of a client making a request to the server, the server processing the request and returning a PDF file, and the client receiving the PDF file. The process includes error handling and logging.
+![未命名绘图 drawio (1)](https://github.com/ChrisChantszto/InsureHub_microservices/assets/68599772/dfde71e7-7bf5-4b2d-a190-26e870649c7f)
+
+The UML diagram shows the process of a client making a request to the server, the server processing the request and returning a PDF file, and the client receiving the PDF file and a successful response.

@@ -23,16 +23,19 @@ def export_to_pdf():
 
     HTML(string=html_out).write_pdf("output.pdf")
 
+    print('generating pdf')
+
     return send_file('output.pdf', as_attachment=True)
 
 @app.route('/output.pdf')
 def return_pdf():
     try:
         response = send_file('output.pdf', as_attachment=True)
-        print('The download is complete.')
         return response
     except Exception as e:
         return str(e)
+    finally:
+        print('The download is complete.')
     
 if __name__ == '__main__':
     app.run(port=5000) 
